@@ -1,0 +1,199 @@
+.nav__header {
+  margin-top: 2rem;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  &-icon {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-name {
+    padding-bottom: 0.2rem;
+  }
+  &-first-line {
+    @include borderSpec;
+  }
+  &-second-line {
+    @include borderSpec;
+    width: 0.75rem;
+  }
+  &-third-line {
+    @include borderSpec;
+  }
+  &-name {
+    font-size: 0.8rem;
+  }
+  &-btn {
+    font-size: 2rem;
+    color: $color-indigo;
+  }
+}
+header {
+  width: 80vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.cS-hidden {
+  &-travel {
+    @include boxes;
+    background-color: $color-red-light;
+    color: $color-red;
+    @include boxTransition;
+    @include goDown;
+  }
+  &-restaurant {
+    @include boxes;
+    background-color: $color-blue-light;
+    color: $color-blue-dark;
+    @include boxTransition;
+    @include goDown;
+  }
+  &-shopping {
+    @include boxes;
+    background-color: $color-indigo-light;
+    color: $color-indigo;
+    @include boxTransition;
+    @include goDown;
+  }
+}
+
+.form {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  &__amount,
+  &__date,
+  &__description {
+    margin-bottom: 1.5rem;
+  }
+  &__date {
+    position: relative;
+  }
+  &__amount-input,
+  &__date-input,
+  &__description-input {
+    width: 80vw;
+    outline: none;
+    border: none;
+    background-color: $color-blue-light;
+  }
+  &__amount-input,
+  &__date-input {
+    height: 3rem;
+    border-radius: 3rem;
+  }
+  &__amount {
+    position: relative;
+  }
+  &__amount-input {
+    padding-left: 1.5rem;
+  }
+
+  &__amount-currency {
+    position: absolute;
+    right: 3rem;
+    top: 0.6rem;
+    display: flex;
+    width: 5rem;
+    height: 4rem;
+    justify-content: space-between;
+  }
+  &__amount-seperation-char {
+    border-left: 1px solid #{$color-blue-dark};
+    width: 1px;
+    height: 1.8rem;
+  }
+  &__date-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+  &__description-input {
+    height: 8rem;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  &__date-btn {
+    position: absolute;
+    right: 0.05rem;
+    bottom: 0.1rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    background-color: $color-blue-dark;
+    padding: 0.7rem 3rem;
+    color: $color-white;
+    font-size: $btn-fontsize;
+    outline: none;
+    cursor: pointer;
+  }
+}
+.fa-microphone {
+  font-size: 1.5rem;
+
+  color: $color-white;
+}
+.listen {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+
+  &__mic {
+    &:hover {
+    }
+  }
+  &__btn {
+    padding: 1rem 1.2rem;
+    background-color: $color-blue;
+    border: none;
+    border-radius: 50%;
+  }
+  &__text {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+.footer {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem auto;
+
+  &-button-save {
+    text-decoration: none;
+    background-color: $color-blue-dark;
+    @include btnFeatures;
+    color: $color-white;
+    font-size: $btn-fontsize;
+  }
+  &-button-reset {
+    text-decoration: none;
+    background-color: $color-white;
+    @include btnFeatures;
+    color: $color-red;
+    border: 1px solid $color-red;
+    font-size: $btn-fontsize;
+  }
+}

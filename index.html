@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/lightside.css" />
+    <script src="./js/jquery.js"></script>
+    <script src="./js/lightslider.js"></script>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav>
+      <div class="nav__header">
+        <!-- nav__icon -->
+
+        <div class="nav__header-icon">
+          <div class="nav__header-line">
+            <div class="nav__header-first-line"></div>
+            <div class="nav__header-second-line"></div>
+            <div class="nav__header-third-line"></div>
+          </div>
+
+          <!-- nav__name -->
+          <div class="nav__header-name">
+            <h1>Expenses</h1>
+          </div>
+        </div>
+
+        <!-- nav__addition-button -->
+        <div class="nav__header-btn">
+          <i class="fas fa-plus-circle"></i>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <ul id="autoWidth" class="cS-hidden">
+        <li class="item-a">
+          <div class="cS-hidden-travel">
+            <i class="fas fa-plane"></i>
+            <h2>Travel</h2>
+          </div>
+        </li>
+        <li class="item-b">
+          <div class="cS-hidden-restaurant">
+            <i class="fas fa-utensils"></i>
+            <h2>Restaurant</h2>
+          </div>
+        </li>
+        <li class="item-c">
+          <div class="cS-hidden-shopping">
+            <i class="fas fa-shopping-cart"></i>
+            <h2>Shoping</h2>
+          </div>
+        </li>
+        <li class="item-d">
+          <div class="cS-hidden-travel">
+            <i class="fas fa-plane"></i>
+            <h2>Travel</h2>
+          </div>
+        </li>
+        <li class="item-e">
+          <div class="cS-hidden-restaurant">
+            <i class="fas fa-utensils"></i>
+            <h2>Restaurant</h2>
+          </div>
+        </li>
+          <div class="cS-hidden-travel">
+            <i class="fas fa-plane"></i>
+            <h2>Travel</h2>
+          </div>
+        </li>
+        <li class="item-b">
+          <div class="cS-hidden-restaurant">
+            <i class="fas fa-utensils"></i>
+            <h2>Restaurant</h2>
+          </div>
+        </li>
+        <li class="item-c">
+          <div class="cS-hidden-shopping">
+            <i class="fas fa-shopping-cart"></i>
+            <h2>Shoping</h2>
+          </div>
+        </li>
+        <li class="item-d">
+          <div class="cS-hidden-travel">
+            <i class="fas fa-plane"></i>
+            <h2>Travel</h2>
+          </div>
+        </li>
+        <li class="item-e">
+          <div class="cS-hidden-restaurant">
+            <i class="fas fa-utensils"></i>
+            <h2>Restaurant</h2>
+          </div>
+        </li>
+          <div class="cS-hidden-travel">
+            <i class="fas fa-plane"></i>
+            <h2>Travel</h2>
+          </div>
+        </li>
+        <li class="item-b">
+          <div class="cS-hidden-restaurant">
+            <i class="fas fa-utensils"></i>
+            <h2>Restaurant</h2>
+          </div>
+        </li>
+        <li class="item-c">
+          <div class="cS-hidden-shopping">
+            <i class="fas fa-shopping-cart"></i>
+            <h2>Shoping</h2>
+          </div>
+        </li>
+        <li class="item-d">
+          <div class="cS-hidden-travel">
+            <i class="fas fa-plane"></i>
+            <h2>Travel</h2>
+          </div>
+        </li>
+        <li class="item-e">
+          <div class="cS-hidden-restaurant">
+            <i class="fas fa-utensils"></i>
+            <h2>Restaurant</h2>
+          </div>
+        </li>
+          <div class="cS-hidden-travel">
+            <i class="fas fa-plane"></i>
+            <h2>Travel</h2>
+          </div>
+        </li>
+        <li class="item-b">
+          <div class="cS-hidden-restaurant">
+            <i class="fas fa-utensils"></i>
+            <h2>Restaurant</h2>
+          </div>
+        </li>
+        <li class="item-c">
+          <div class="cS-hidden-shopping">
+            <i class="fas fa-shopping-cart"></i>
+            <h2>Shoping</h2>
+          </div>
+        </li>
+        <li class="item-d">
+          <div class="cS-hidden-travel">
+            <i class="fas fa-plane"></i>
+            <h2>Travel</h2>
+          </div>
+        </li>
+        <li class="item-e">
+          <div class="cS-hidden-restaurant">
+            <i class="fas fa-utensils"></i>
+            <h2>Restaurant</h2>
+          </div>
+        </li>
+      </ul>
+    </header>
+
+    <!-- input field -->
+    <section class="form">
+      <!-- amount -->
+      <div class="form__amount">
+        <input
+          type="text"
+          placeholder=" &#0036; Enter Amount"
+          class="form__amount-input"
+        />
+        <div class="form__amount-currency">
+          <div class="form__amount-seperation">
+            <div class="form__amount-seperation-char"></div>
+          </div>
+          <div class="form__amount-currency-dropdown">
+            <form>
+              <select class="form__amount-dropdown">
+                <option value="USD">USD</option>
+                <option value="EURO">EURO</option>
+                <option value="NAIRA">NAIRA</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- date -->
+      <div class="form__date">
+        <input type="date" name="date" class="form__date-input" />
+        <a href="#" class="form__date-btn">Today</a>
+      </div>
+      <!-- description -->
+      <div class="form__description">
+        <textarea
+          class="form__description-input"
+          placeholder="Description"
+        ></textarea>
+      </div>
+    </section>
+    <!-- mic -->
+    <section class="listen">
+      <div class="listen__mic">
+        <div class="listen__btn">
+          <i class="fas fa-microphone"></i>
+        </div>
+      </div>
+      <div class="listen__text">
+        <h1>Converting to text</h1>
+      </div>
+    </section>
+    <!-- save and reset buttons -->
+    <footer class="footer">
+      <div class="footer__btn-save">
+        <a href="#" class="footer-button-save">Save</a>
+      </div>
+      <div class="footer__btn-reset">
+        <a href="#" class="footer-button-reset">Reset</a>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
